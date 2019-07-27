@@ -99,7 +99,7 @@ describe(`Router`, function() {
     document.body.removeChild(this.routerApp);
 
     window.location.hash = `#foo`;
-    expect(this.routerApp.state.text).to.equal(`Default route!`);
+    expect(this.routerApp.state).to.equal(null);
   });
 
   describe(`navigate()`, function() {
